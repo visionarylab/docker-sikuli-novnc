@@ -69,6 +69,7 @@ HTML_INDEX = '''<html><head>
         g = d.getElementsByTagName('body')[0],
         x = w.innerWidth || e.clientWidth || g.clientWidth,
         y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+        y = y - 35;
         window.location.href = "redirect.html?width=" + x + "&height=" + (parseInt(y));
     </script>
     <title>Page Redirection</title>
@@ -80,7 +81,7 @@ HTML_REDIRECT = '''<html><head>
         var port = window.location.port;
         if (!port)
             port = window.location.protocol[4] == 's' ? 443 : 80;
-        window.location.href = "vnc_auto.html";
+        window.location.href = "vnc_menu_auto.html";
     </script>
     <title>Page Redirection</title>
 </head><body></body></html>'''

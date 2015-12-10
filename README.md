@@ -1,31 +1,35 @@
-docker-ubuntu-vnc-desktop
-=========================
+# docker-sikuli-novnc
+Dockerfile for ubuntu + lxde + x11vnc + chrome + sikuli + novnc
 
 From Docker Index
 ```
-docker pull dorowu/ubuntu-desktop-lxde-vnc
+docker pull kkochubey1/sikuli-novnc
 ```
 
 Build yourself
 ```
-git clone https://github.com/fcwu/docker-ubuntu-vnc-desktop.git
-docker build --rm -t dorowu/ubuntu-desktop-lxde-vnc docker-ubuntu-vnc-desktop
+git clone https://github.com/kkochubey1/docker-sikuli-novnc.git
+docker build --rm -t kkochubey1/sikuli-novnc docker-sikuli-novnc
 ```
 
 Run
 ```
-docker run -i -t -p 6080:6080 dorowu/ubuntu-desktop-lxde-vnc
+docker run -i -t -p 6080:6080 kkochubey1/sikuli-novnc
 ```
 
-Browse http://127.0.0.1:6080/vnc.html
+Browse http://<docker-machine ip ...>:6080/vnc.html
 
 <img src="https://raw.github.com/fcwu/docker-ubuntu-vnc-desktop/master/screenshots/lxde.png" width=400/>
 
 
-Troubleshooting
-==================
+Test (Mac)
+```
+# Test sikuli edit script
+./test/sikuli-edit.sh test/test.sikuli
 
-1. boot2docker connection issue, https://github.com/fcwu/docker-ubuntu-vnc-desktop/issues/2
+# Test sikuli run script
+./test/sikuli-run.sh test/test.sikuli
+```
 
 
 License
