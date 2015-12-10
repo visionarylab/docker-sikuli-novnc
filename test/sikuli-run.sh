@@ -7,7 +7,7 @@ docker stop sikuli_6082 || true
 docker rm -f sikuli_6082 || true
 
 # Srart docker container with VNC session
-docker run -d --name sikuli_6082 -p 6082:6080 -v /dev/shm:/dev/shm -v $(pwd):/var/src/sikuli_scripts kkochubey1/sikuli-novnc:latest
+docker run -d --name sikuli_6082 -p 6082:6080 -v /dev/shm:/dev/shm -v $(pwd):/var/src/sikuli_scripts kkochubey1/docker-sikuli-novnc:latest
 
 sleep 5
 

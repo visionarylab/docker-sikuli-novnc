@@ -9,17 +9,17 @@ docker pull kkochubey1/sikuli-novnc
 Build yourself
 ```
 git clone https://github.com/kkochubey1/docker-sikuli-novnc.git
-docker build --rm -t kkochubey1/sikuli-novnc docker-sikuli-novnc
+docker build --rm -t kkochubey1/docker-sikuli-novnc docker-sikuli-novnc
 ```
 
 Run
 ```
-docker run -i -t -p 6080:6080 kkochubey1/sikuli-novnc
+docker run -i -t -p 6080:6080 kkochubey1/docker-sikuli-novnc
 ```
 
 Browse http://<docker-machine ip ...>:6080/vnc.html
 
-<img src="https://raw.github.com/fcwu/docker-ubuntu-vnc-desktop/master/screenshots/lxde.png" width=400/>
+<img src="https://raw.github.com/kkochubey1/docker-sikuli-novnc/master/screenshots/lxde.png" width=400/>
 
 
 Test (Mac)
