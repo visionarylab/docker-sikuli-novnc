@@ -15,9 +15,14 @@ docker build --rm -t kkochubey1/docker-sikuli-novnc docker-sikuli-novnc
 Run
 ```
 docker run -i -t -p 6080:6080 kkochubey1/docker-sikuli-novnc
+
+# Mac: Open browser on dockerhost IP port 6080
+dockerhost_ip=$(docker-machine ip $(docker-machine active))
+open 'http://'$dockerhost_ip':6080' 
 ```
 
-Browse http://<docker-machine ip ...>:6080/vnc.html
+
+Browse http://192.168.99.100:6080
 
 <img src="https://raw.github.com/kkochubey1/docker-sikuli-novnc/master/screenshots/lxde.png" width=400/>
 
