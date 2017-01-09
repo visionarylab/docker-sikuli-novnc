@@ -56,5 +56,8 @@ RUN wget --no-verbose -O /tmp/chromedriver_linux64.zip http://chromedriver.stora
   && ln -fs /opt/selenium/chromedriver-$CHROME_DRIVER_VERSION /usr/bin/chromedriver
 
 EXPOSE 6080
+EXPOSE 6082
+EXPOSE 6083
+EXPOSE 6084
 WORKDIR /root
 ENTRYPOINT ["/startup.sh"]
